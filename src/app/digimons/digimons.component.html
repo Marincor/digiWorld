@@ -1,11 +1,15 @@
-<h2>My Digimons</h2>
+
 
 <ul>
   <li *ngFor="let digimon of digimons" [ngClass]="{'selected': digimon === selectedDigimon}"
   (click)="onSelect(digimon)">
-      <span>{{digimon.id}}</span> {{digimon.name}}
+  <mat-card class="container__card">
+    <mat-card-content class="container__card-content">
+      <span class="container__card-content__title">{{digimon.name}}</span>
       <span><img [src]="digimon.img" width="200px" [alt]="digimon.name" loading="lazy"></span>
       <span>Level: {{digimon.level}}</span>
+    </mat-card-content>
+  </mat-card>
   </li>
 </ul>
 
