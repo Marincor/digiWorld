@@ -1,3 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-html, body { height: 100%; display: flex; flex-direction: column;  align-items: center; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html {  display: flex; flex-direction: column;  align-items: center; overflow-x: hidden; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(246,246,246);
+
+
+h1 {
+  font-size: 10rem;
+}
+}
+

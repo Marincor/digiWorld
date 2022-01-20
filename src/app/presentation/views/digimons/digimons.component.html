@@ -1,0 +1,13 @@
+<div  class="container__card">
+  <p-card *ngFor="let digimon of digimons" [ngClass]="{'selected': digimon === selectedDigimon}"
+  (click)="onSelect(digimon)"  [style]="{'width': '50%', 'margin-bottom': '2rem'}">
+  <ng-template pTemplate="header">
+      <p>{{digimon.name}}</p>
+      <img [src]="digimon.img" width="50%" [alt]="digimon.name" loading="lazy">
+    </ng-template>
+    </p-card>
+  </div>
+
+
+
+

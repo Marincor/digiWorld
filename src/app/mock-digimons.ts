@@ -1,4 +1,4 @@
-import { Digimon } from './infrastructure/models/digimons.model';
+import { Digimon } from './infrastructure/interfaces/models/digimons.model';
 export const DIGIMONS: Digimon[] = [
   {id: 0, name: "Charizard"},
   {id: 1, name: "Pikachu"},
